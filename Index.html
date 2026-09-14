@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Escolar Acessível</title>
+    <!-- Vinculação do arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Link de atalho para leitores de tela -->
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <div class="container">
+
+        <!-- CABEÇALHO -->
+        <header role="banner">
+            <h1>Guia Escolar Acessível</h1>
+            <p>Este espaço apresenta informações escolares de maneira simples, organizada e acessível.</p>
+        </header>
+
+        <!-- MENU -->
+        <nav aria-label="Menu Principal">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#informacoes">Informações</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main id="conteudo-principal">
+
+            <!-- SEÇÃO INÍCIO COM IMAGEM -->
+            <section id="inicio">
+                <h2>Seja bem-vindo</h2>
+                <div class="imagem-container">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=800&q=80" 
+                         alt="Fachada de uma escola limpa e organizada, com rampa de acesso na entrada e árvores ao lado." 
+                         class="imagem-escola">
+                </div>
+            </section>
+
+            <!-- INFORMAÇÕES IMPORTANTES -->
+            <section id="informacoes">
+                <h2>Informações Importantes</h2>
+                <div class="grid-info">
+                    <article class="card-info">
+                        <h3>Horário das Aulas</h3>
+                        <p>07h00 às 12h00</p>
+                    </article>
+                    <article class="card-info">
+                        <h3>Intervalo</h3>
+                        <p>09h30 às 09h50</p>
+                    </article>
+                    <article class="card-info">
+                        <h3>Secretaria</h3>
+                        <p>Bloco Administrativo</p>
+                    </article>
+                    <article class="card-info">
+                        <h3>Atendimento</h3>
+                        <p>08h00 às 17h00</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- COMUNICAÇÃO ACESSÍVEL -->
+            <section id="dicas">
+                <h2>Comunicação Acessível</h2>
+                <p class="texto-secao">Confira algumas formas que utilizamos para melhorar a comunicação no ambiente escolar:</p>
+                <ul class="lista-dicas">
+                    <li>Utilizar linguagem clara e direta.</li>
+                    <li>Evitar textos muito longos.</li>
+                    <li>Organizar as informações por tópicos.</li>
+                    <li>Utilizar títulos para separar cada assunto.</li>
+                    <li>Evitar excesso de informações na mesma tela.</li>
+                </ul>
+            </section>
+
+            <!-- BOTÕES DE AÇÃO E CONTATO -->
+            <section id="contato">
+                <h2>Ações Rápidas</h2>
+                <p class="texto-secao">Clique nos botões abaixo para acessar os horários completos ou falar com a equipe:</p>
+                <div class="area-botoes">
+                    <a href="#informacoes" class="btn">Ver Horários</a>
+                    <a href="mailto:secretaria@escola.com" class="btn">Falar com a Secretaria</a>
+                </div>
+            </section>
+
+            <!-- BOAS PRÁTICAS DE ACESSIBILIDADE APLICADAS -->
+            <section>
+                <h2>Boas Práticas de Acessibilidade Aplicadas</h2>
+                <ul class="lista-boas-praticas">
+                    <li><strong>Títulos organizados:</strong> Estrutura hierárquica usando H1, H2 e H3.</li>
+                    <li><strong>Textos objetivos:</strong> Frases curtas e diretas ao ponto.</li>
+                    <li><strong>Boa combinação de cores:</strong> Texto escuro sobre fundo claro para alto contraste.</li>
+                    <li><strong>Botões visíveis e claros:</strong> Nomes explicativos e com áreas de clique grandes.</li>
+                    <li><strong>Acessibilidade visual:</strong> Imagem com descrição detalhada via atributo <code>alt</code>.</li>
+                    <li><strong>Sem sobrecarga sensorial:</strong> Nenhuma animação, transição rápida ou cores brilhantes/estressantes.</li>
+                </ul>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Guia Escolar Acessível &copy; - Desenvolvido com foco em inclusão.</p>
+        </footer>
+
+    </div>
+
+</body>
+      </html>
