@@ -1,0 +1,207 @@
+/* === CONFIGURAÇÕES GERAIS E CORES (FOCO EM ACESSIBILIDADE SENSORIAL) === */
+:root {
+    --cor-fundo: #F4F6F8;       /* Fundo suave e sem brilho excessivo */
+    --cor-caixa: #FFFFFF;       /* Fundo dos cartões e seções */
+    --cor-texto: #1D232A;       /* Alto contraste para leitura, sem ser preto puro */
+    --cor-primaria: #1D4ED8;    /* Azul escuro legível para botões e links */
+    --cor-borda: #D1D5DB;       /* Linhas sutis de separação */
+    --fonte-principal: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* === LINK DE ATALHO PARA LEITORES DE TELA === */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--cor-primaria);
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* === LAYOUT CENTRALIZADO === */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* === CABEÇALHO === */
+header {
+    background-color: var(--cor-caixa);
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--cor-texto);
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+/* === MENU DE NAVEGAÇÃO === */
+nav {
+    background-color: var(--cor-caixa);
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda);
+    margin-bottom: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav li {
+    width: 25%;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 16px;
+    color: var(--cor-primaria);
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a:hover, 
+nav a:focus {
+    background-color: #E0E7FF;
+    outline: 3px solid var(--cor-primaria);
+}
+
+/* === SEÇÕES E CARTÕES === */
+section {
+    background-color: var(--cor-caixa);
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda);
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    border-bottom: 2px solid var(--cor-borda);
+    padding-bottom: 8px;
+}
+
+.texto-secao {
+    margin-bottom: 16px;
+}
+
+/* BANNER DE IMAGEM */
+.imagem-container {
+    text-align: center;
+}
+
+.imagem-escola {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda);
+}
+
+/* INFORMAÇÕES IMPORTANTES (GRID SIMPLES) */
+.grid-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.card-info {
+    background-color: #F8FAFC;
+    padding: 16px;
+    border-radius: 6px;
+    border-left: 4px solid var(--cor-primaria);
+}
+
+.card-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+/* LISTAS */
+ul.lista-dicas {
+    padding-left: 20px;
+}
+
+ul.lista-dicas li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+ul.lista-boas-praticas {
+    padding-left: 20px;
+    list-style-type: '✅ ';
+}
+
+ul.lista-boas-praticas li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+/* === BOTÕES === */
+.area-botoes {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: #FFFFFF;
+    padding: 14px 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover, 
+.btn:focus {
+    background-color: #0F3398;
+    outline: 3px solid #000000;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 16px;
+    font-size: 0.9rem;
+    color: #4B5563;
+}
